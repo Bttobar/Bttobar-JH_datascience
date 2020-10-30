@@ -38,6 +38,28 @@ relevel(yesnofac, ref = "no") #ref es para cabiar el orden de los niveles.
 
 as.numeric(yesnofac)
 
+library(Hmisc)
+library(plyr)
+data2 = mutate(data,zipGroups = cut2(zipCode, g=4)) 
+# mutate es crea otro dataframe en el que se pueden cambiar o agregar variables 
+table(data2$zipGroups)
+
+# -abs(x)
+# -sqrt(x)
+# -ceiling(x) => redondear siempre al entero mas arriba 
+# -floor(x)
+# -round(x,digits=n)
+# -signif(x,digits=n)
+# -cos(x) sin(x)
+# -log(x) log2(x) log10(X)
+# -exp(x)
+
+
+
+
+
+
+
 
 
 
